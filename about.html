@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+         header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        #about {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color:green;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        #about h1 {
+            color: #3498db;
+        }
+
+        #about p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+    </style>
+    <title>Your College Website</title>
+</head>
+
+<body><header>
+    <div class="logo-container">
+        <a href="#" class="logo-link">
+            <img src="image/logo.png" alt="College Logo" class="logo">
+        </a>
+        <h1>CODE UNIVERSITY OF SCAMMING AND TECHNOLOGY</h1>
+    </div>
+</header>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="#">Institution</a>
+        <div class="dropdown-content">
+            <a href="about.html">About</a>
+            <a href="founders.html">Founders</a>
+
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Academics</a>
+        <div class="dropdown-content">
+            <div class="sub-dropdown">
+                <a href="proggrames.html">Programmes</a>
+
+            </div>
+            <a href="founders.html">Founders</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Admissions</a>
+        <div class="dropdown-content">
+            <a href="addmisions.html">KUCCPS Admission Letters</a>
+            <a href="addmisions.html">Admission Letters</a>
+            <a href="addmisions.html">Old Admissions</a>
+
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Portals</a>
+        <div class="dropdown-content">
+            <a href="student.html">Students</a>
+            <a href="student.html">Staff</a>
+            <a href="student.html">E-Learning</a>
+
+        </div>
+    </div>
+    <a href="campulife.html">Campus life</a>
+</div>
+<header>
+
+
+<div id="about">
+    <div id="about-container">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Code University Of Scamming and Technology! We take pride in being a trailblazing
+            institution in the realm of cybersecurity and digital forensics, with a specialized focus on
+            blockchain and cryptocurrency security.
+        </p>
+        <p>
+            Our commitment revolves around equipping students with cutting-edge knowledge to navigate the
+            intricate world of blockchain technology and cryptocurrencies. At Code University, we understand the
+            pivotal role that blockchain plays in ensuring secure and transparent transactions.
+        </p>
+        <p>
+            Through our comprehensive curriculum, students delve into topics such as smart contracts, consensus
+            algorithms, cryptocurrency mining, and decentralized applications (DApps). We believe in hands-on
+            learning, providing students with real-world scenarios to hone their skills in identifying and
+            preventing potential scams in the blockchain and cryptocurrency space.
+        </p>
+        <p>
+            As the digital landscape continues to evolve, Code University remains steadfast in its mission to
+            produce industry-ready professionals who can contribute to the advancement and security of
+            blockchain and cryptocurrency technologies.
+        </p>
+    </div>
+</div>
+</div>
+        <div id="footer">
+            <p>&copy; 2023 University. All rights reserved.</p>
+        </div>
+        <script>
+        document.addEventListener("scroll", function ()
+        {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const bodyHeight = document.body.clientHeight;
+        
+        // Show the footer when the user scrolls to the last page
+        if (scrollPosition + windowHeight >= bodyHeight)
+        {
+        document.getElementById("footer").style.display = "block";
+        } else
+        {
+        document.getElementById("footer").style.display = "none";
+        }
+        });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="css/student.css">
+</head>
+<body>
+  <div class="box">
+    <form autocomplete="off" method="post" action="db_connect.php" >
+      <h2>Login</h2>
+	  
+     <input type="text" name="USERNAME" placeholder="USERNAME"required="required">
+	 <br>
+
+	 <br>
+     
+<input type="password" name="PASSWORD" placeholder="PASSWORD" style="::placeholder { color: blue; }"
+  required="required">
+
+ <br>
+      
+      <input type="submit" name="submit"value="Login">
+
+      
+    </form>
+  </div>
+  <input id=" logout" type="submit" name="submit" value="HOMEPAGE" onclick="homepage()">
+</body>
+<script>
+  function homepage(){
+    return window.location = "index.html";
+  }
+</script>
+</html>

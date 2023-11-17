@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        
+        #founders {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .founder-container {
+            width: 30%;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .founder-container:hover {
+            transform: scale(1.05);
+        }
+
+        .founder-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .founder-text {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+    <title>Your College Website</title>
+</head>
+
+<body>
+    <header>
+        <img src="image/logo.png" alt="University Logo" width="100">
+        <h1>CODE UNIVERSITY OF SCAMMING AND TECHNOLOGY</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Institution</a>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="#">Founders</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Academics</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="#">Programmes</a>
+                    <ul class="sub-dropdown-content">
+                        <li><a href="#">SciT</a></li>
+                        <li><a href="#">Engineering</a></li>
+                    </ul>
+                </div>
+                <a href="#">Founders</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Admissions</a>
+            <div class="dropdown-content">
+                <a href="#">KUCCPS Admission Letters</a>
+                <a href="#">Admission Letters</a>
+                <a href="#">Old Admissions</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Portals</a>
+            <div class="dropdown-content">
+                <a href="student.html">Students</a>
+                <a href="student.html">Staff</a>
+                <a href="student.html">E-Learning</a>
+
+            </div>
+        </div>
+        <a href="#">Photo Gallery</a>
+    </div>
+
+ <header>
+        <h1>Meet Our Founders</h1>
+    </header>
+
+    <div id="founders">
+        <div class="founder-container">
+            <img src="founder1.jpg" alt="Founder 1" class="founder-image">
+            <div class="founder-text">
+                <h2>Founder Name 1</h2>
+                <p>Co-Founder</p>
+            </div>
+        </div>
+
+        <div class="founder-container">
+            <img src="founder2.jpg" alt="Founder 2" class="founder-image">
+            <div class="founder-text">
+                <h2>Founder Name 2</h2>
+                <p>Co-Founder</p>
+            </div>
+        </div>
+    <div id="footer">
+        <p> Code University. All rights reserved. &copy; 2023</p>
+    </div>
+    <script>
+        document.addEventListener("scroll", function ()
+        {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const bodyHeight = document.body.clientHeight;
+
+            // Show the footer when the user scrolls to the last page
+            if (scrollPosition + windowHeight >= bodyHeight)
+            {
+                document.getElementById("footer").style.display = "block";
+            } else
+            {
+                document.getElementById("footer").style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

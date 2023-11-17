@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #161515;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color:aqua;
+        }
+
+        tr:nth-child(even) {
+            background-color:chartreuse;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+        }
+    </style>
+    <title>Your College Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <img src="image/logo.png" alt="College Logo" class="logo">
+            </a>
+            <h1>CODE UNIVERSITY OF SCAMMING AND TECHNOLOGY</h1>
+        </div>
+    </header>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Institution</a>
+            <div class="dropdown-content">
+                <a href="about.html">About</a>
+                <a href="founders.html">Founders</a>
+    
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Academics</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="proggrames.html">Programmes</a>
+    
+                </div>
+                <a href="founders.html">Founders</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+            <a href="#">Admissions</a>
+            <div class="dropdown-content">
+                <a href="addmisions.html">KUCCPS Admission Letters</a>
+                <a href="addmisions.html">Admission Letters</a>
+                <a href="addmisions.html">Old Admissions</a>
+    
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Portals</a>
+            <div class="dropdown-content">
+                <a href="student.html">Students</a>
+                <a href="student.html">Staff</a>
+                <a href="student.html">E-Learning</a>
+    
+            </div>
+        </div>
+        <a href="campulife.html">Campus life</a>
+    </div>
+    <header>
+
+<table>
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Programme</th>
+            <th>Duration</th>
+            <th>Population</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Computer Science</td>
+            <td>BSc in Scamming</td>
+            <td>4 years</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Business Studies</td>
+            <td>Scam Management</td>
+            <td>3 years</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cryptocurrency</td>
+            <td>MSc in Crypto Scams</td>
+            <td>2 years</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Finance</td>
+            <td>Financial Scam Engineering</td>
+            <td>4 years</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>Marketing</td>
+            <td>Strategic Scam Marketing</td>
+            <td>3 years</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Information Technology</td>
+            <td>Advanced Scam Technologies</td>
+            <td>5 years</td>
+            <td>600</td>
+        </tr>
+    </tbody>
+</table>
+
+    <div id="footer">
+        <p> Code University. All rights reserved. &copy; 2023</p>
+    </div>
+<script>
+    
+            document.addEventListener("scroll", function ()
+            {
+                const scrollPosition = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const bodyHeight = document.body.clientHeight;
+
+                // Show the footer when the user scrolls to the last page
+                if (scrollPosition + windowHeight >= bodyHeight)
+                {
+                    document.getElementById("footer").style.display = "block";
+                } else
+                {
+                    document.getElementById("footer").style.display = "none";
+                }
+            });
+        </script>
+
+</body>
+
+</html>

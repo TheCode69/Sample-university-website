@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+    #slideshow {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin-top: 0px;
+    }
+     .text-on-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(223, 22, 22);
+            font-size: 36px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    </style>
+    <title>Your College Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <img src="image/logo.png" alt="College Logo" class="logo">
+            </a>
+            <h1>CODE UNIVERSITY OF SCAMMING AND TECHNOLOGY</h1>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Institution</a>
+            <div class="dropdown-content">
+                <a href="about.html">About</a>
+                <a href="founders.html">Founders</a>
+                
+                </div>
+            </div>
+        <div class="dropdown">
+            <a href="#">Academics</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="proggrames.html">Programmes</a>
+                    
+                </div>
+                <a href="founders.html">Founders</a>
+            </div>
+        </div>
+
+            <div class="dropdown">
+                <a href="#">Admissions</a>
+                <div class="dropdown-content">
+                    <a href="addmisions.html">KUCCPS Admission Letters</a>
+                    <a href="addmisions.html">Admission Letters</a>
+                    <a href="addmisions.html">Old Admissions</a>
+            
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Portals</a>
+                <div class="dropdown-content">
+                    <a href="student.html">Students</a>
+                    <a href="student.html">Staff</a>
+                    <a href="student.html">E-Learning</a>
+            
+                </div>
+            </div>
+            <a href="campulife.html">Campus life</a>
+        </div>
+        <header>
+            
+            <p id="introMessage"></p>
+        </header>
+        <div id="slideshow">
+            <img src="image/1.jfif" alt="Image 1" class="slide">
+            <div class="text-on-image" style="color: blue;">A university for professional Scammers</div>
+            <img src="image/2.jfif" alt="Image 2" class="slide">
+            <div class="text-on-image" style="color: blue;">A university for professional Scammers</div>
+            <img src="image/3.jfif" alt="Image 3" class="slide">
+            <div class="text-on-image" style="color: blue;">A university for professional Scammers</div>
+            <img src="image/1.jfif" alt="Image 4" class="slide>
+        </div>
+
+
+       
+        <p>About</p>
+        
+        <audio controls>
+            <source src="your-audio-file.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        
+       
+        <div id="footer">
+            <p> Code University. All rights reserved. &copy; 2023</p>
+        </div>
+        
+        <script>
+            const message = "Welcome to Code University Of Scamming and Technology🖥🖥🖥🖥🖥🖥 Where Scamming Meets Intelligence. ";
+            const messageElement = document.getElementById("introMessage");
+
+            let index = 0;
+
+            function displayMessage()
+            {
+                if (index < message.length)
+                {
+                    messageElement.textContent += message[index];
+                    index++;
+                    setTimeout(displayMessage, 100); // Typing speed (in milliseconds)
+                }
+            }
+
+            displayMessage();
+
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+
+            function showSlide()
+            {
+                slides.forEach((slide, i) =>
+                {
+                    if (i === currentSlide)
+                    {
+                        slide.style.opacity = 1;
+                    } else
+                    {
+                        slide.style.opacity = 0;
+                    }
+                });
+
+                currentSlide = (currentSlide + 1) % slides.length;
+                setTimeout(showSlide, 1000); // Slide transition time (in milliseconds)
+            }
+
+            showSlide();
+             document.addEventListener("scroll", function ()
+                {
+                    const scrollPosition = window.scrollY;
+                    const windowHeight = window.innerHeight;
+                    const bodyHeight = document.body.clientHeight;
+
+                    // Show the footer when the user scrolls to the last page
+                    if (scrollPosition + windowHeight >= bodyHeight)
+                    {
+                        document.getElementById("footer").style.display = "block";
+                    } else
+                    {
+                        document.getElementById("footer").style.display = "none";
+                    }
+                });
+        </script>
+</body>
+
+</html>

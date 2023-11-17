@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 40px;
+    
+}
+.navbar a:hover{
+    color: aqua;
+    background-color: rgb(29, 31, 30);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(21, 22, 22);
+}
+/* Your existing CSS styles */
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 0;
+    /* Position it at the top */
+    left: 100%;
+    /* Position it to the right of the parent */
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+.login-container {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.additional-links {
+    margin-top: 15px;
+}
+
+.additional-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.additional-links a:hover {
+    color: #4caf50;
+}
+
+.separator {
+    margin: 0 10px;
+}
+        #introMessage {
+            font-size: 24px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        #slideshow {
+            position: relative;
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>University Website</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <img src="image/logo.png" alt="College Logo" class="logo">
+            </a>
+            <h1>CODE UNIVERSITY OF SCAMING AND TECHNOLOGY</h1>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Institution</a>
+                <div class="dropdown-content">
+                    <a href="#">About</a>
+                    <a href="#">Founders</a>
+        
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academics</a>
+                <div class="dropdown-content">
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes</a>
+                        <ul class="sub-dropdown-content">
+                            <li><a href="#">SciT</a></li>
+                            <li><a href="#">Engineering</a></li>
+                        </ul>
+                    </div>
+                    <a href="#">Founders</a>
+                </div>
+            </div>
+        
+            <div class="dropdown">
+                <a href="#">Admissions</a>
+                <div class="dropdown-content">
+                    <a href="#">KUCCPS Admission Letters</a>
+                    <a href="#">Admission Letters</a>
+                    <a href="#">Old Admissions</a>
+        
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Portals</a>
+                <div class="dropdown-content">
+                    <a href="student.html">Students</a>
+                    <a href="student.html">Staff</a>
+                    <a href="student.html">E-Learning</a>
+        
+                </div>
+            </div>
+            <a href="#">Photo Gallery</a>
+        </div>
+        <header>
+        <p id="introMessage"></p>
+    </header>
+
+    <div id="slideshow">
+        <img src="image/1.jfif" alt="Image 1" class="slide">
+        <img src="image/2.jfif" alt="Image 2" class="slide">
+        <img src="image/3.jfif" alt="Image 3" class="3">
+        <img src="image/1.jfif" alt="Image 4" class="3">
+        <img src="image/logo.png" alt="Image 4" class="3">
+        <!-- Add more images as needed -->
+    </div>
+
+    <audio controls>
+        <source src="path/to/your-audio-file.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <div id="footer">
+        <p>&copy; 2023 University. All rights reserved.</p>
+    </div>
+
+    <script>
+        const message = "Welcome to our University! Explore the possibilities.";
+        const messageElement = document.getElementById("introMessage");
+
+        let index = 0;
+
+        function displayMessage()
+        {
+            if (index < message.length)
+            {
+                messageElement.textContent += message[index];
+                index++;
+                setTimeout(displayMessage, 100); // Typing speed (in milliseconds)
+            }
+        }
+
+        displayMessage();
+
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide()
+        {
+            slides.forEach((slide, i) =>
+            {
+                if (i === currentSlide)
+                {
+                    slide.style.opacity = 1;
+                } else
+                {
+                    slide.style.opacity = 0;
+                }
+            });
+
+            currentSlide = (currentSlide + 1) % slides.length;
+            setTimeout(showSlide, 10000); // Slide transition time (in milliseconds)
+        }
+
+        showSlide();
+    </script>
+
+</body>
+
+</html>
